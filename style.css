@@ -1,0 +1,206 @@
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;
+  font-family: Tahoma;
+}
+
+.hide {
+  display: none;
+}
+
+
+/*전 체 배 경*/
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/bg-img.jpg);
+  background-size: cover;
+}
+
+
+/*회 원 가 입 창  배 경*/
+
+.modal-container {
+  background-color: rgba(136, 136, 136, 0.497);
+  padding: 50px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-input-area {
+  width: 100%;
+}
+
+/* 소 개 글 */
+h {
+  font-weight: 550;
+  font-size: 25pt;
+  margin-bottom: 35px;
+  color: rgba(0, 0, 0, 0.769);
+  -webkit-text-stroke: 0.5px rgba(185, 185, 185, 0.188);
+}
+
+
+/*셀 렉 터  배 경*/
+
+.selector {
+  display: flex;
+  margin-bottom: 70px;
+  text-shadow: 1px 1px 1px rgb(150, 150, 150);
+}
+
+/*셀 렉 터  버 튼*/
+
+.selector-btn {
+  padding: 10px 20px;
+  background-color: inherit;
+  color: rgba(255, 255, 255, 0.815);
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.selector-border {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+
+/*텍 스 트 입 력 창  배 경*/
+
+.input-box {
+  width: 100%;
+  margin-bottom: 30px;
+  color: white;
+}
+
+
+/*텍 스 트 입 력 창  제 목*/
+
+.input-box-title {
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 1px rgb(109, 109, 109);
+}
+
+
+/*텍 스 트 입 력 칸 - 전체속성 */
+
+input {
+  background-color: inherit;
+  border: none;
+  color:rgb(255, 255, 255);
+}
+
+input:focus {
+  outline: none;
+}
+
+/*텍 스 트 입 력 칸 - 원하는 부분*/
+
+#username,
+#password,
+#password-retype {
+  width: 100%;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.success-message,
+.failure-message,
+.mismatch-message {
+  margin-top: 5px;
+  font-size: 10pt;
+  text-shadow: 1px 1px 1px rgba(132, 132, 132, 0.557);
+}
+
+
+
+/*버 튼 전 체*/
+button{
+  cursor: pointer;
+  border: none;
+}
+
+a{
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+/*가 입 하 기 & 로 그 인 버 튼*/
+.submit-btn {
+  background-color: rgba(255, 255, 255, 0.979);
+  border: none;
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 10px;
+  font-size: 12pt;
+  margin-bottom: 20px;
+  -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.45);   /*글자 테두리*/
+}
+
+.submit-btn:hover {
+  box-shadow: 1px 1px 10px 3px #2929297f;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+  font-size: 14pt;
+}
+
+.lightOff {
+  background-color: rgba(141, 141, 141, 0.9);
+}
+
+.lightOff:hover {
+  background-color: rgba(141, 141, 141, 0.9);
+  box-shadow: none;
+  font-size: 12pt;
+}
+
+
+/*회 원 가 입 sns 버 튼*/
+
+.modal-sns-area {
+  margin: 10px;
+}
+
+.sns-box-btn {
+  border: none;
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 10px;
+  font-size: 12pt;
+  margin-bottom: 10px;
+  cursor: pointer;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.45);   /*글자 테두리*/
+}
+
+.kakao {
+  background-color: rgba(254, 229, 0, 0.7) ;
+}
+
+.kakao:hover {
+  transition: 0.5s;
+  box-shadow: 1px 1px 10px 5px #43424267;
+  background-color: rgb(254, 229, 0);
+  transition: 0.5s;
+  font-size: 13pt;
+}
+
+.naver {
+  background-color: rgba(3, 199, 90, 0.7);
+}
+
+.naver:hover{
+  transition: 0.5s;
+  box-shadow: 1px 1px 10px 5px #29292967;
+  background-color: rgb(3, 199, 90);
+  transition: 0.5s;
+  font-size: 13pt;
+}

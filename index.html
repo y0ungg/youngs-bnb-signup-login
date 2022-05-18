@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Young's B&B reservation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section class="modal-container">
+    <h>Young's B&B</h>
+    <article class="selector">
+      <button class="selector-btn selector-border">Join us</button>
+      <button class="selector-btn loginBtn">Login</button>
+    </article>
+
+    <article class="modal-input-area">
+      <div class="input-box">
+        <div class="input-box-title">Name</div>
+        <input type="text" id="username">
+        <div class="success-message hide">사용할 수 있는 아이디입니다</div>
+        <div class="failure-message hide">아이디는 네 글자 이상이어야 합니다</div>
+      </div>
+
+      <div class="input-box">
+        <div  class="input-box-title">Password</div>
+        <input type="password" id="password">
+      </div>
+
+      <div class="input-box repeatpwbox">
+        <div  class="input-box-title">Repeat Password</div>
+        <input type="password" id="password-retype">
+        <div class="mismatch-message hide">비밀번호가 일치하지 않습니다</div>
+      </div>
+    </article>
+
+    <article class="modal-sns-area">
+      <div class="sns-box-btn">
+        <a href="https://www.kakaocorp.com/page/" target="_blank" class='sns-box-btn kakao'>Start with Kakao</a>
+        <a href="https://www.naver.com" target="_blank" class='sns-box-btn naver'>Start with Naver</a>
+      </div> 
+    </article>   
+
+      <button class='submit-btn lightOff signuptext'>Create Account</button>
+      <button class='submit-btn lightOff logintext hide'>Get Started</button>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
